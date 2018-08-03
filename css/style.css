@@ -90,12 +90,12 @@ nav a:hover {
 }
 
 nav a {
-        color: #fafafa;
-        min-width: 25px;
-        min-height: 25px;
-        padding: 10px;
-        margin: 0;
-        text-decoration: none;
+    color: #fafafa;
+    min-width: 25px;
+    min-height: 25px;
+    padding: 10px;
+    margin: 0;
+    text-decoration: none;
 }
 
 .button {
@@ -105,7 +105,7 @@ nav a {
     border-radius: 1.5rem;
     font-size: 1rem;
     text-decoration: none;
-    margin: 10px 0 0 0;
+    margin-top: 10px;
 }
 
 .main {
@@ -152,11 +152,12 @@ nav a {
 }
 
 .education-box p {
-    padding: 0 0 .5rem 0;
+    padding-bottom: .5rem;
 }
 
 .education-box h3 {
     color: #F1D302;
+    padding-left: .75rem;
 }
 
 .education-date {
@@ -164,7 +165,8 @@ nav a {
 }
 
 .education-company {
-    color: #cc0000
+    padding-left: 1.5rem;
+    font-size: .75rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -180,7 +182,7 @@ nav a {
     }
     .navigation-pane,
     .main {
-        width: 100%;    
+        width: 100%;
         max-width: 200%;
     }
     .navigation-pane img {
