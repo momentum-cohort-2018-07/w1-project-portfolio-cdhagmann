@@ -129,16 +129,21 @@ nav a {
 
 .projects a {
     max-width: 40%;
-    padding: 0 15px 20px 15px;
 }
 
 .projects img {
     max-width: 100%;
+    padding: 0 15px 20px 15px;
 }
 
 .projects p {
     padding: 0 15px;
     max-width: 60%;
+}
+
+.github {
+    text-decoration: #fafafa;
+    color: #cc0000;
 }
 
 .eductation {
@@ -195,5 +200,15 @@ nav a {
     }
     center {
         display: none;
+    }
+    .projects {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .projects a {
+        max-width: 100%;
+    }
+    .projects p {
+        margin-bottom: 3rem;
     }
 }
