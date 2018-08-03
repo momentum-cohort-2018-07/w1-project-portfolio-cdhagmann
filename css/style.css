@@ -7,11 +7,19 @@
 html {
     background-color: #333333;
     color: #fafafa;
+    font-size: 22px;
+}
+
+img {
+    max-width: 100%;
 }
 
 body {
     max-width: 1080px;
     margin: 0 auto;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
 }
 
 img {
@@ -19,12 +27,11 @@ img {
 }
 
 .navigation-pane {
-    float: left;
     width: 33%;
-    height: 500px;
     background-color: #004E81;
     text-align: center;
     margin: 0 .5%;
+    padding: 25px 0;
 }
 
 .navigation-pane li {
@@ -35,7 +42,7 @@ img {
     color: #fafafa;
     min-width: 25px;
     min-height: 25px;
-    padding: 5px;
+    padding: 10px;
     margin: 0;
     text-decoration: none;
 }
@@ -50,28 +57,57 @@ img {
     color: #fafafa;
     background-color: #cc0000;
     border-radius: 1.5rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-decoration: none;
+    margin: 10px 0 0 0;
 }
 
 .main {
     margin: 0 .5%;
     background-color: #004E81;
-    float: right;
     width: 64%;
+    padding: .5rem;
+}
+
+.main h2 {
+    padding: .5rem 0;
+}
+
+.projects {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-flow: wrap;
+}
+
+/* .project { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+} */
+
+.projects img {
+    max-width: 30%;
+    padding: 15px;
+}
+
+.projects p {
+    max-width: 65%;
+    padding: 15px;
 }
 
 @media screen and (max-width: 768px) {
     html {
-        background-color: #004E81;
-        font-size: 12px
+        background-color: #333333;
+    }
+    body {
+        flex-direction: column;
     }
     .main {
         background-color: #333333;
     }
     .navigation-pane,
     .main {
-        float: none;
         width: 100%
     }
 }
