@@ -21,6 +21,16 @@ body {
     flex-flow: wrap;
     justify-content: space-between;
     align-items: flex-start;
+    font-family: "Fira Sans", Arial, Helvetica, sans-serif
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Roboto, Arial, Helvetica, sans-serif
 }
 
 img {
@@ -70,13 +80,22 @@ nav a:hover {
     color: #fafafa;
     background-color: #cc0000;
     text-decoration: none;
-    border-top: 1px #fafafa solid;
-    border-bottom: 1px #fafafa solid;
+    border-top: 3px #fafafa solid;
+    border-bottom: 3px #fafafa solid;
     border-left: 1px #333333 solid;
     border-right: 1px #333333 solid;
 }
 
-.btn {
+nav a {
+        color: #fafafa;
+        min-width: 25px;
+        min-height: 25px;
+        padding: 10px;
+        margin: 0;
+        text-decoration: none;
+}
+
+.button {
     padding: .75rem;
     color: #fafafa;
     background-color: #cc0000;
@@ -112,7 +131,32 @@ nav a:hover {
 .projects p {
     padding: 0 15px;
     max-width: 60%;
+}
 
+.eductation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.education-box {
+    padding: 15px;
+}
+
+.education-box p {
+    padding: 0 0 .5rem 0;
+}
+
+.education-box h3 {
+    color: #F1D302;
+}
+
+.education-date {
+    border-bottom: 1px #cc0000 dashed;
+}
+
+.education-company {
+    color: #cc0000
 }
 
 @media screen and (max-width: 768px) {
@@ -138,8 +182,7 @@ nav a:hover {
         font-size: 16px;
         height: 350px;
     }
-
     center {
-        display: none;    
+        display: none;
     }
 }
